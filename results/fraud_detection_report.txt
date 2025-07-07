@@ -1,0 +1,69 @@
+
+FRAUD DETECTION MODEL TRAINING SUMMARY REPORT
+=============================================
+Generated on: 2025-07-06 19:25:28
+
+DATASET INFORMATION
+-------------------
+• Training samples: 227,845
+• Test samples: 56,962
+• Features used: 50
+
+MODELS TRAINED
+--------------
+1. Lasso Regression
+2. Logistic Regression  
+3. Random Forest
+4. XGBoost
+
+MODEL PERFORMANCE COMPARISON
+----------------------------
+Best Model by AUC: N/A (AUC: 0.0000)
+Best Model by F1: N/A (F1: 0.0000)
+
+Detailed Performance:
+• AUC: AUC=0.0000, F1=0.0000, Avg_Precision=0.0000
+• F1_Score: AUC=0.0000, F1=0.0000, Avg_Precision=0.0000
+• Average_Precision: AUC=0.0000, F1=0.0000, Avg_Precision=0.0000
+• Precision_Fraud: AUC=0.0000, F1=0.0000, Avg_Precision=0.0000
+• Recall_Fraud: AUC=0.0000, F1=0.0000, Avg_Precision=0.0000
+• Precision_Normal: AUC=0.0000, F1=0.0000, Avg_Precision=0.0000
+• Recall_Normal: AUC=0.0000, F1=0.0000, Avg_Precision=0.0000
+
+TOP 10 MOST IMPORTANT FEATURES (Average across all models)
+----------------------------------------------------------
+15. V14: 0.5920
+50. pca_anomaly_score: 0.4582
+11. V10: 0.3666
+26. Amount: 0.2753
+ 5. V4: 0.2694
+35. V_std: 0.2618
+13. V12: 0.2049
+39. V_magnitude: 0.1920
+30. Amount_log: 0.1815
+31. Amount_sqrt: 0.1438
+
+FILES CREATED
+-------------
+Files (in ../models/ folder):
+• lasso_fraud_model.pkl
+• logistic_fraud_model.pkl
+• random_forest_fraud_model.pkl
+• xgboost_fraud_model.pkl
+• feature_selector.pkl
+
+Data & Results (in ../results/ folder):
+• selected_features.csv
+• feature_importance.csv
+• model_comparison_results.csv
+• fraud_detection_summary.json
+• fraud_detection_report.txt
+
+DEPLOYMENT RECOMMENDATIONS
+--------------------------
+• Best performing model: N/A
+• Consider ensemble methods combining top 2-3 models
+• Monitor model performance on new data
+• Retrain models periodically with updated data
+• Pay attention to top features for business insights
+

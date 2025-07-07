@@ -1,0 +1,170 @@
+{
+  "Training_Info": {
+    "Date": "2025-07-06 19:25:28",
+    "Total_Features_Used": 50,
+    "Training_Samples": 227845,
+    "Test_Samples": 56962,
+    "Models_Trained": [
+      "Lasso Regression",
+      "Logistic Regression",
+      "Random Forest",
+      "XGBoost"
+    ]
+  },
+  "Model_Performance": {
+    "Best_Model_by_AUC": "N/A",
+    "Best_AUC_Score": "N/A",
+    "Best_Model_by_F1": "N/A",
+    "Best_F1_Score": "N/A",
+    "All_Model_AUC_Scores": {},
+    "All_Model_F1_Scores": {}
+  },
+  "Top_10_Features": [
+    {
+      "Feature": "V14",
+      "Avg_Importance": 0.5920440156476158
+    },
+    {
+      "Feature": "pca_anomaly_score",
+      "Avg_Importance": 0.4581678092477686
+    },
+    {
+      "Feature": "V10",
+      "Avg_Importance": 0.36662889377307256
+    },
+    {
+      "Feature": "Amount",
+      "Avg_Importance": 0.27526513341713993
+    },
+    {
+      "Feature": "V4",
+      "Avg_Importance": 0.2693830976094411
+    },
+    {
+      "Feature": "V_std",
+      "Avg_Importance": 0.26178659852613057
+    },
+    {
+      "Feature": "V12",
+      "Avg_Importance": 0.20485597045697485
+    },
+    {
+      "Feature": "V_magnitude",
+      "Avg_Importance": 0.19203430202381128
+    },
+    {
+      "Feature": "Amount_log",
+      "Avg_Importance": 0.18152021776864452
+    },
+    {
+      "Feature": "Amount_sqrt",
+      "Avg_Importance": 0.14383705344883643
+    }
+  ],
+  "Feature_Importance_by_Model": {
+    "Lasso_Top_5": [
+      {
+        "Feature": "pca_anomaly_score",
+        "Lasso_Importance": 1.0
+      },
+      {
+        "Feature": "V_sum",
+        "Lasso_Importance": 0.20677768805298494
+      },
+      {
+        "Feature": "Time_hour",
+        "Lasso_Importance": 0.023165163270533355
+      },
+      {
+        "Feature": "V14",
+        "Lasso_Importance": 0.0
+      },
+      {
+        "Feature": "V10",
+        "Lasso_Importance": 0.0
+      }
+    ],
+    "LogReg_Top_5": [
+      {
+        "Feature": "Amount",
+        "LogReg_Importance": 1.0
+      },
+      {
+        "Feature": "Amount_log",
+        "LogReg_Importance": 0.6492841117336609
+      },
+      {
+        "Feature": "V4",
+        "LogReg_Importance": 0.5308835461470569
+      },
+      {
+        "Feature": "Amount_sqrt",
+        "LogReg_Importance": 0.45920974231446565
+      },
+      {
+        "Feature": "Time",
+        "LogReg_Importance": 0.37469693666610426
+      }
+    ],
+    "RandomForest_Top_5": [
+      {
+        "Feature": "V14",
+        "RandomForest_Importance": 1.0
+      },
+      {
+        "Feature": "pca_anomaly_score",
+        "RandomForest_Importance": 0.7381894063935786
+      },
+      {
+        "Feature": "V_std",
+        "RandomForest_Importance": 0.6859835104328299
+      },
+      {
+        "Feature": "V10",
+        "RandomForest_Importance": 0.6156876578877285
+      },
+      {
+        "Feature": "V12",
+        "RandomForest_Importance": 0.4439065295721214
+      }
+    ],
+    "XGBoost_Top_5": [
+      {
+        "Feature": "V14",
+        "XGBoost_Importance": 1.0
+      },
+      {
+        "Feature": "V10",
+        "XGBoost_Importance": 0.5520583391189575
+      },
+      {
+        "Feature": "V4",
+        "XGBoost_Importance": 0.10582751035690308
+      },
+      {
+        "Feature": "V3_V4_interaction",
+        "XGBoost_Importance": 0.1033986508846283
+      },
+      {
+        "Feature": "Amount_sqrt",
+        "XGBoost_Importance": 0.10334166139364243
+      }
+    ]
+  },
+  "Files_Created": {
+    "Models": [
+      "lasso_fraud_model.pkl",
+      "logistic_fraud_model.pkl",
+      "random_forest_fraud_model.pkl",
+      "xgboost_fraud_model.pkl",
+      "feature_selector.pkl"
+    ],
+    "Results": [
+      "selected_features.csv",
+      "feature_importance.csv",
+      "model_comparison_results.csv",
+      "fraud_detection_summary.json",
+      "fraud_detection_report.txt"
+    ]
+  }
+}

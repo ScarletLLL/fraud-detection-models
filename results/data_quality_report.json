@@ -1,0 +1,27 @@
+{
+  "completeness": {
+    "missing_values": 0,
+    "completeness_rate": 100.0
+  },
+  "consistency": {
+    "duplicate_rows": 1081,
+    "data_types_consistent": true,
+    "value_ranges_normal": true
+  },
+  "validity": {
+    "time_range_valid": true,
+    "amount_range_valid": true,
+    "class_values_valid": true
+  },
+  "uniqueness": {
+    "unique_transactions": 283726,
+    "uniqueness_rate": 99.6204447222154
+  },
+  "metadata": {
+    "report_generated": "2025-07-05T14:51:48.688537",
+    "total_rows": 284807,
+    "total_columns": 36,
+    "fraud_transactions": 492,
+    "normal_transactions": 284315
+  }
+}
